@@ -1,0 +1,12 @@
+{
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"postCreateCommand": "sudo apt update && sudo apt -y install gdb-multiarch && ./setup.sh",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools"
+			]
+		}
+	}
+}
