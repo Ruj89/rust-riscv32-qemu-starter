@@ -27,7 +27,7 @@ extern "C" fn eh_personality() {}
 #[panic_handler]
 fn panic(info: &core::panic::PanicInfo) -> ! {
     print!("Aborting: ");
-    if let Some(p) = info.location() {
+    if let Some(_p) = info.location() {
         println!(
             "line {}, file {}: {}",
             p.line(),
@@ -49,4 +49,9 @@ extern "C" fn abort() -> ! {
 }
 
 #[no_mangle]
-extern "C" fn kmain() {}
+extern "C" fn kmain() {
+    let mut a = 0;
+    while a < 10 {
+        a = a + 1;
+    }
+}
