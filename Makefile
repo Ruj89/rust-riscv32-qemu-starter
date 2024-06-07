@@ -19,7 +19,7 @@ OUT=os.elf
 QEMU=qemu-system-riscv32
 MACH=virt
 CPU=rv32
-CPUS=4
+CPUS=1
 MEM=128M
 DRIVE=qemu.dsk
 

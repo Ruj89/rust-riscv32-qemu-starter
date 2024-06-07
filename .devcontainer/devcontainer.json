@@ -5,7 +5,8 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-vscode.cpptools"
+				"ms-vscode.cpptools",
+				"rust-lang.rust-analyzer"
 			]
 		}
 	}
